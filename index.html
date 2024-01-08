@@ -5,148 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Chauchera</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            font-family: ui-sans-serif, system-ui;
-        }
-
-        body {
-            background-color: var(--color-bg);
-            color: var(--color-texto);
-
-        }
-
-        :root {
-            --color-bg: #1F2630;
-            --color-boton-1: #FCD434;
-            --color-boton-2: #333B46;
-            --color-inactivo: #868F9E;
-            --color-texto: #F1F2F7;
-            --color-negativo: #C46377;
-        }
-
-        .color-texto {
-            color: var(--color-texto);
-        }
-
-        .header_pagina_principal {
-            background-color: var(--color-bg);
-            color: var(--color-texto);
-            padding: 1rem;
-        }
-
-        .main_pagina_principal {
-            padding: 0 1rem 1rem 1rem;
-        }
-
-        .usuario_shortcut {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: var(--color-boton-2);
-            border-radius: 50px;
-            width: fit-content;
-            padding: 10px 15px;
-        }
-
-        .usuario_shortcut img {
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-
-        .contenedor_default {
-            background-color: var(--color-boton-2);
-            border-radius: 30px;
-            padding: 1rem;
-            margin: 0 0 1rem 0;
-        }
-
-        .header_contenedor {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-
-        .boton {
-            border-radius: 50px;
-            border: none;
-            padding: 10px 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            color: var(--color-texto);
-        }
-
-        .boton2 {
-            background-color: var(--color-boton-2) !important;
-        }
-
-        .boton1 {
-            background-color: var(--color-boton-1) !important;
-            color: var(--color-bg);
-        }
-
-        .color-inactivo-boton {
-            background-color: var(--color-inactivo) !important;
-        }
-
-        .header_contenedor .boton2 {
-            width: fit-content;
-            height: fit-content;
-            padding: 0.5rem;
-            border-radius: 100%;
-        }
-
-        .icono {
-            color: var(--color-texto);
-        }
-
-        .balance {
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            margin: 1rem 0;
-        }
-
-        .balance h1 {
-            margin-left: 1rem;
-        }
-
-        .botones_transacciones {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .botones_transacciones .boton {
-            width: 32%;
-        }
-    </style>
+    <link rel="stylesheet" href="./sass/style.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </head>
 
 <body>
     <!-- nav -->
     <header class="header_pagina_principal">
-        <div class="usuario_shortcut">
+        <button class="boton boton2 usuario_shortcut">
             <img src="https://picsum.photos/30" alt="imagen de usuario">
             <p>Usuario</p>
-        </div>
+        </button>
     </header>
     <!-- dashboard de cartera digital -->
     <main class="main_pagina_principal">
         <div class="contenedor_default">
             <header class="header_contenedor">
                 <h3>Balance Total</h3>
-                <button class="boton boton2 color-inactivo-boton">
+                <button class="boton boton2 color_inactivo_boton">
                     <iconify-icon class="icono" icon="carbon:view-filled" width="20"></iconify-icon>
                 </button>
             </header>
@@ -158,9 +34,32 @@
             <footer class="botones_transacciones">
                 <button class="boton boton1"><iconify-icon icon="ph:arrow-down-bold"
                         width="18"></iconify-icon>Depositar</button>
-                <button class="boton boton2 color-inactivo-boton"><iconify-icon icon="ph:arrow-up-bold"
+                <button class="boton boton2 color_inactivo_boton"><iconify-icon icon="ph:arrow-up-bold"
                         width="18"></iconify-icon>Retirar</button>
-                <button class="boton boton2 color-inactivo-boton"><iconify-icon icon="mingcute:transfer-fill"
+                <button class="boton boton2 color_inactivo_boton"><iconify-icon icon="mingcute:transfer-fill"
+                        width="18"></iconify-icon>Transferir</button>
+            </footer>
+
+        </div>
+
+        <div class="contenedor_default">
+            <header class="header_contenedor">
+                <h3>Balance Total</h3>
+                <button class="boton boton2 color_inactivo_boton">
+                    <iconify-icon class="icono" icon="carbon:view-filled" width="20"></iconify-icon>
+                </button>
+            </header>
+            <main class="balance">
+                <iconify-icon class="icono" icon="cryptocurrency:usd" style="color: white;" width="32"></iconify-icon>
+                <h1>1000.00</h1>
+            </main>
+
+            <footer class="botones_transacciones">
+                <button class="boton boton1"><iconify-icon icon="ph:arrow-down-bold"
+                        width="18"></iconify-icon>Depositar</button>
+                <button class="boton boton2 color_inactivo_boton"><iconify-icon icon="ph:arrow-up-bold"
+                        width="18"></iconify-icon>Retirar</button>
+                <button class="boton boton2 color_inactivo_boton"><iconify-icon icon="mingcute:transfer-fill"
                         width="18"></iconify-icon>Transferir</button>
             </footer>
 

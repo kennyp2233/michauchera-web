@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: ui-sans-serif, system-ui;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-texto);
+
+}
+
+:root {
+    --color-bg: #1F2630;
+    --color-boton-1: #FCD434;
+    --color-boton-2: #333B46;
+    --color-inactivo: #868F9E;
+    --color-texto: #F1F2F7;
+    --color-negativo: #C46377;
+}
+
+.color-texto {
+    color: var(--color-texto);
+}
+
+.header_pagina_principal {
+    background-color: var(--color-bg);
+    color: var(--color-texto);
+    padding: 1rem;
+}
+
+.main_pagina_principal {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.usuario_shortcut {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-boton-2);
+    border-radius: 50px;
+    width: fit-content;
+    padding: 10px 15px;
+}
+
+.usuario_shortcut img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contenedor_default {
+    background-color: var(--color-boton-2);
+    border-radius: 30px;
+    padding: 1rem;
+    margin: 0 0 1rem 0;
+}
+
+.header_contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.boton {
+    border-radius: 50px;
+    border: none;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--color-texto);
+}
+
+.boton2 {
+    background-color: var(--color-boton-2);
+}
+
+.boton1 {
+    background-color: var(--color-boton-1);
+    color: var(--color-bg);
+}
+
+.color_inactivo_boton {
+    background-color: var(--color-inactivo);
+}
+
+.header_contenedor .boton2 {
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem;
+    border-radius: 100%;
+}
+
+.icono {
+    color: var(--color-texto);
+}
+
+.balance {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 1rem 0;
+}
+
+.balance h1 {
+    margin-left: 1rem;
+}
+
+.botones_transacciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botones_transacciones .boton {
+    width: 32%;
+}
