@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: ui-sans-serif, system-ui;
 }
 
 html {
@@ -20,6 +21,7 @@ body {
   --color-inactivo: #868F9E;
   --color-texto: #F1F2F7;
   --color-negativo: #C46377;
+  --color-positivo: #5ECC8B;
 }
 
 .color-texto {
@@ -55,7 +57,7 @@ body {
 .contenedor_default {
   background-color: var(--color-boton-2);
   border-radius: 30px;
-  padding: 1rem;
+  padding: 1rem 1.2rem;
   margin: 0 0 1rem 0;
 }
 
@@ -74,6 +76,7 @@ body {
   justify-content: center;
   gap: 10px;
   color: var(--color-texto);
+  background-color: transparent;
 }
 
 .boton2 {
@@ -115,10 +118,47 @@ body {
 
 .botones_transacciones {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 
 .botones_transacciones .boton {
-  width: 32%;
+  width: 100%;
+}
+
+.transaccion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--color-boton-2);
+  border-radius: 30px;
+  margin: 0 0 1rem 0;
+}
+
+.transaccion:last-child {
+  margin: 0;
+}
+
+.retiro_color {
+  color: var(--color-negativo);
+}
+
+.deposito_color {
+  color: var(--color-positivo);
+}
+
+@media (max-width: 403px) {
+  .botones_transacciones .boton {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .botones_transacciones .texto_boton {
+    display: none;
+  }
+  .botones_transacciones .boton .icono {
+    font-size: 1.5rem;
+    margin: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
