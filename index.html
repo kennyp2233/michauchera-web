@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi Chauchera</title>
     <style>
         * {
             margin: 0;
@@ -73,30 +73,29 @@
             align-items: center;
         }
 
-        .color-inactivo-boton {
-            background-color: var(--color-inactivo) !important;
-        }
 
-        .boton2 {
-            background-color: var(--color-boton-2);
+        .boton {
             border-radius: 50px;
             border: none;
             padding: 10px 15px;
             display: flex;
             align-items: center;
             justify-content: center;
+            gap: 10px;
             color: var(--color-texto);
         }
 
+        .boton2 {
+            background-color: var(--color-boton-2) !important;
+        }
+
         .boton1 {
-            background-color: var(--color-boton-1);
-            border-radius: 50px;
-            border: none;
-            padding: 10px 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-boton-2);
+            background-color: var(--color-boton-1) !important;
+            color: var(--color-bg);
+        }
+
+        .color-inactivo-boton {
+            background-color: var(--color-inactivo) !important;
         }
 
         .header_contenedor .boton2 {
@@ -126,6 +125,10 @@
             justify-content: space-between;
             align-items: center;
         }
+
+        .botones_transacciones .boton {
+            width: 32%;
+        }
     </style>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </head>
@@ -143,7 +146,7 @@
         <div class="contenedor_default">
             <header class="header_contenedor">
                 <h3>Balance Total</h3>
-                <button class="color-inactivo-boton boton2">
+                <button class="boton boton2 color-inactivo-boton">
                     <iconify-icon class="icono" icon="carbon:view-filled" width="20"></iconify-icon>
                 </button>
             </header>
@@ -153,9 +156,12 @@
             </main>
 
             <footer class="botones_transacciones">
-                <button class="boton1">Depositar</button>
-                <button class="boton2">Retirar</button>
-                <button class="boton2">Transferir</button>
+                <button class="boton boton1"><iconify-icon icon="ph:arrow-down-bold"
+                        width="18"></iconify-icon>Depositar</button>
+                <button class="boton boton2 color-inactivo-boton"><iconify-icon icon="ph:arrow-up-bold"
+                        width="18"></iconify-icon>Retirar</button>
+                <button class="boton boton2 color-inactivo-boton"><iconify-icon icon="mingcute:transfer-fill"
+                        width="18"></iconify-icon>Transferir</button>
             </footer>
 
         </div>
