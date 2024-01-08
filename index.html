@@ -44,7 +44,6 @@
                 <button class="boton boton2 color_inactivo_boton">
                     <iconify-icon icon="mingcute:transfer-fill" width="18"></iconify-icon>
                     <span class="texto_boton">Transferir</span>
-
                 </button>
             </footer>
 
@@ -57,7 +56,7 @@
                     <iconify-icon class="icono" icon="bxs:down-arrow" width="15"></iconify-icon>
                 </button>
             </header>
-            <main id="transacciones">
+            <main id="transacciones" class="mostrar">
                 <div class="transaccion">
                     <div class="transaccion_icono">
                         <iconify-icon class="icono deposito_color" icon="ph:arrow-down-bold" width="18"></iconify-icon>
@@ -106,6 +105,48 @@
                         <h4>1000.00</h4>
                     </div>
             </main>
+        </div>
+
+        <div class="contenedor_default">
+            <!--Cuentas-->
+            <header class="header_contenedor">
+                <h3>Cuentas</h3>
+                <button class="boton boton1">
+                    <iconify-icon icon="mingcute:add-fill" width="18"></iconify-icon>
+                    <p>Agregar cuenta</p>
+                </button>
+            </header>
+            <main class="cuentas">
+                <div class="cuenta">
+                    <div class="cuenta_icono">
+                        <iconify-icon class="icono" icon="mdi:bank" width="32"></iconify-icon>
+                    </div>
+                    <div class="cuenta_info">
+                        <h4>Banco</h4>
+                        <p>1000.00</p>
+                    </div>
+                </div>
+                <div class="cuenta">
+                    <div class="cuenta_icono">
+                        <iconify-icon class="icono" icon="mdi:wallet" width="32"></iconify-icon>
+                    </div>
+                    <div class="cuenta_info">
+                        <h4>Efectivo</h4>
+                        <p>1000.00</p>
+                    </div>
+                </div>
+                <div class="cuenta">
+                    <div class="cuenta_icono">
+                        <iconify-icon class="icono" icon="mdi:credit-card" width="32"></iconify-icon>
+                    </div>
+                    <div class="cuenta_info">
+                        <h4>Tarjeta</h4>
+                        <p>1000.00</p>
+                    </div>
+                </div>
+            </main>
+
+        </div>
 </body>
 <script>
     // Obtén el botón
@@ -114,17 +155,19 @@
         mostrarTransacciones();
     });
 
+
     function mostrarTransacciones() {
         var x = document.getElementById("transacciones");
-        if (x.style.display === "none") {
-            x.style.display = "block";
-            document.getElementById("boton_transacciones").innerHTML = '<iconify-icon class="icono" icon="bxs:up-arrow" width="15"></iconify-icon>';
-        } else {
-            x.style.display = "none";
+        if (x.classList.contains("mostrar") || x.classList === null) {
+            x.classList.remove("mostrar");
+            x.classList.add("ocultar");
             document.getElementById("boton_transacciones").innerHTML = '<iconify-icon class="icono" icon="bxs:down-arrow" width="15"></iconify-icon>';
+        } else {
+            x.classList.remove("ocultar");
+            x.classList.add("mostrar");
+            document.getElementById("boton_transacciones").innerHTML = '<iconify-icon class="icono" icon="bxs:up-arrow" width="15"></iconify-icon>';
         }
     }
-
 </script>
 
 </html>

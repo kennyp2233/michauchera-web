@@ -149,6 +149,26 @@ body {
   color: var(--color-positivo);
 }
 
+#transacciones {
+  overflow: hidden;
+  transition: height 1s ease;
+}
+
+.ocultar {
+  height: 0;
+}
+
+.mostrar {
+  height: auto;
+}
+
+.cuentas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
 @media (max-width: 403px) {
   .botones_transacciones .boton {
     width: -moz-fit-content;
