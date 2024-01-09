@@ -95,6 +95,7 @@ label{
   transform: var(--transform-boton);
   cursor: pointer;
   font-weight: bolder;
+  width: 50%;
 }
 .header_pagina_principal .contenedor_derecha {
   display: flex;

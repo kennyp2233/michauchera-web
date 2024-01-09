@@ -96,6 +96,11 @@ main {
   transform: perspective(400px) translateY(6px) translateZ(0) scale(0.9);
 }
 
+.btn-agregar-cuenta:hover,
+.btn-agregar-categoria:hover {
+  background: #cc9b00;
+}
+
 
 .contenedor-iconos {
   display: flex;
