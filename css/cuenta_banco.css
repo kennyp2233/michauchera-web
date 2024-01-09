@@ -278,7 +278,9 @@ body {
     }
 }
 
-@media (max-width: 509px) {
+
+
+@media (max-width: 775px) {
     .header_pagina_principal {
         grid-template-columns: 1fr 1fr;
     }
@@ -286,9 +288,7 @@ body {
     .seleccionar_cuenta {
         justify-content: flex-end;
     }
-}
 
-@media (max-width: 579px) {
     .header_pagina_principal .boton p {
         display: none;
     }
