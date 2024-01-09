@@ -16,16 +16,16 @@ body {
 }
 
 :root {
-  --color-bg: #1F2630;
+  --color-bg: #181A20;
   --color-boton-1: #FCD434;
-  --color-boton-2: #333B46;
+  --color-boton-2: #1a1d25;
   --color-inactivo: #868F9E;
   --color-texto: #F1F2F7;
   --color-negativo: #db143c;
   --color-positivo: #5ECC8B;
   --hover-seleccionar: rgba(255, 255, 255, 0.4);
-  --box-shadow: 0 1px 3px rgba(0,0,0,0.12), 
-  0 1px 2px rgba(0,0,0,0.24);
+  --box-shadow: 0 1px 3px rgba(43,49,57,0.12), 
+  0 1px 2px rgba(43,49,57,1);
   --transition-boton: transform 0.2s ease, box-shadow 0.2s ease;
   --transform-boton: perspective(400px) translateZ(0);
   --transform-boton-active: perspective(400px) translateY(6px) translateZ(0) scale(0.9);
@@ -62,6 +62,8 @@ body {
   margin: 0 0 1rem 0;
   width: 100%;
   box-shadow: var(--box-shadow);
+  border: solid 2px rgb(43,49,57);
+  
 }
 
 .header_contenedor {
