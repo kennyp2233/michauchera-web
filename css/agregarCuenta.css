@@ -12,11 +12,12 @@ main {
   background: var(--color-boton-2);
   max-width: 100%;
   width: 700px;
-
   height: 100%;
   margin: 0.5rem;
   padding: 1rem 1.2rem;
   border-radius: 30px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 
+  0 1px 2px rgba(0,0,0,0.24);
 }
 
 .titulo {
@@ -54,7 +55,15 @@ main {
   margin: 10px 0;
   background: var(--color-boton-1);
   cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transform: perspective(400px) translateZ(0);
 }
+
+.btn-agregar-cuenta:active,
+.btn-agregar-categoria:active {
+  transform: perspective(400px) translateY(6px) translateZ(0) scale(0.9);
+}
+
 
 .contenedor-iconos {
   display: flex;
