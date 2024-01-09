@@ -27,7 +27,7 @@ body {
   0 1px 2px rgba(0,0,0,0.24);
   --transition-boton: transform 0.2s ease, box-shadow 0.2s ease;
   --transform-boton: perspective(400px) translateZ(0);
-  --transform-boton-active: transform: perspective(400px) translateY(6px) translateZ(0) scale(0.9);
+  --transform-boton-active: perspective(400px) translateY(6px) translateZ(0) scale(0.9);
 }
 
 .color-texto {
@@ -79,6 +79,11 @@ body {
   gap: 10px;
   color: var(--color-texto);
   background-color: transparent;
+  transition: var(--transition-boton);
+  transform: var(--transform-boton)
+}
+.boton:active{
+  transform: var(--transform-boton-active);
 }
 
 

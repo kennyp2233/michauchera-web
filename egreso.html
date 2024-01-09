@@ -36,17 +36,15 @@
         <div class="contenedor_default ">
             <form action="index.html">
                 <label for="egreso">Dinero a ingresar</label>
-                <div class="input-container">
-                    <input id="egreso" type="number" max="0">
-                </div>
-                <br>
+                <input id="egreso" type="number" max="0">
                 <label for="categoria">Categoría</label>
-                <select id="categoria">
-                    <option value="">Comida</option>
-                    <option value="">Transferencia</option>
-                    <option value="">Nómina</option>
-                    <option value="">Universidad</option>
-                </select><br>
+                <select name="tipo" id="tipo" class="select-categoria">
+                    <option value="0">Seleccione una categoria</option>
+                    <option value="1">Comida</option>
+                    <option value="2">Transferencia</option>
+                    <option value="3">Nómina</option>
+                    <option value="4">Universidad</option>
+                  </select>
                 <label for="fecha">Selecciona una fecha:</label>
                 <input type="date" id="fecha" name="fecha">
                 <div class="btn-confirmacion">
