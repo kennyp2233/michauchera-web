@@ -75,6 +75,8 @@ body {
   background-color: transparent;
 }
 
+
+
 .boton2 {
   background-color: var(--color-boton-2);
 }
@@ -176,6 +178,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  flex-wrap: wrap;
 
 }
 
@@ -186,10 +189,11 @@ body {
 .clasificacion {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 1rem;
+  gap: 1rem;
+  padding: 1rem;
 }
 
-@media (max-width: 403px) {
+@media (max-width: 430px) {
   .botones_transacciones .boton {
     width: fit-content;
   }
@@ -204,7 +208,17 @@ body {
   }
 }
 
-@media (min-width: 600px) {
+@media (max-width: 489px) {
+  .cuentas .boton {
+    flex-direction: column;
+  }
+
+  .clasificacion .boton {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 700px) {
   .contenedor-resumen .contenedor_default {
     margin: 0;
   }
@@ -212,14 +226,14 @@ body {
   .contenedor-resumen {
     display: grid;
     grid-template-areas:
-      "grid_izquierdo contenedor_default"
-      "grid_izquierdo contenedor_default"
+      "contenedor_default contenedor_default"
+      "grid_abajo grid_abajo"
     ;
     gap: 16px;
   }
 
-  .grid_izquierdo {
-    grid-area: grid_izquierdo;
+  .grid_abajo {
+    grid-area: grid_abajo;
   }
 
 

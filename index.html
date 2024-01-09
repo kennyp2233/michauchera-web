@@ -48,8 +48,107 @@
             </footer>
 
         </div>
+
         <div class="contenedor-resumen">
-            <div class="contenedor_default grid_izquierdo">
+            <div class="contenedor_default">
+                <!--Cuentas-->
+                <header class="header_contenedor">
+                    <h3>Cuentas</h3>
+                    <button class="boton boton1">
+                        <iconify-icon icon="mingcute:add-fill" width="18"></iconify-icon>
+                        <p>Agregar cuenta</p>
+                    </button>
+                </header>
+                <main class="cuentas">
+                    <button class="boton cuenta">
+                        <div class="cuenta_icono">
+                            <iconify-icon class="icono" icon="mdi:bank" width="32"></iconify-icon>
+                        </div>
+                        <div class="cuenta_info">
+                            <h4>Banco</h4>
+                            <p>1000.00</p>
+                        </div>
+                    </button>
+                    <button class="boton cuenta">
+                        <div class="cuenta_icono">
+                            <iconify-icon class="icono" icon="mdi:wallet" width="32"></iconify-icon>
+                        </div>
+                        <div class="cuenta_info">
+                            <h4>Efectivo</h4>
+                            <p>1000.00</p>
+                        </div>
+                    </button>
+                    <button class="boton cuenta">
+                        <div class="cuenta_icono">
+                            <iconify-icon class="icono" icon="mdi:credit-card" width="32"></iconify-icon>
+                        </div>
+                        <div class="cuenta_info">
+                            <h4>Tarjeta</h4>
+                            <p>1000.00</p>
+                        </div>
+                    </button>
+                </main>
+
+            </div>
+
+
+
+            <div class="contenedor_default">
+                <!--Clasificacion de retiros-->
+                <header class="header_contenedor">
+
+                    <h3>Resumen por categoria</h3>
+                    <button class="boton boton1">
+                        <iconify-icon icon="mdi:filter-variant" width="18"></iconify-icon>
+                        <p>Filtrar</p>
+                    </button>
+                </header>
+
+                <main class="clasificacion">
+                    <button class="boton clasificacion_item">
+                        <div class="clasificacion_icono">
+                            <iconify-icon class="icono" icon="mdi:food" width="32"></iconify-icon>
+                        </div>
+                        <div class="clasificacion_info">
+                            <h4>Comida</h4>
+                            <p>1000.00</p>
+                        </div>
+                    </button>
+
+                    <button class="boton clasificacion_item">
+                        <div class="clasificacion_icono">
+                            <iconify-icon class="icono" icon="mdi:transfer" width="32"></iconify-icon>
+                        </div>
+                        <div class="clasificacion_info">
+                            <h4>Transferencia</h4>
+                            <p>1000.00</p>
+                        </div>
+                    </button>
+
+                    <button class="boton clasificacion_item">
+                        <div class="clasificacion_icono">
+                            <iconify-icon class="icono" icon="mdi:briefcase" width="32"></iconify-icon>
+                        </div>
+                        <div class="clasificacion_info">
+                            <h4>Nomina</h4>
+                            <p>1000.00</p>
+                        </div>
+                    </button>
+
+
+                    <button class="boton clasificacion_item">
+                        <div class="clasificacion_icono">
+                            <iconify-icon class="icono" icon="mdi:school" width="32"></iconify-icon>
+                        </div>
+                        <div class="clasificacion_info">
+                            <h4>Universidad</h4>
+                            <p>1000.00</p>
+                        </div>
+                    </button>
+                </main>
+            </div>
+
+            <div class="contenedor_default grid_abajo">
                 <header class="header_contenedor">
                     <h3>Transacciones Recientes</h3>
                     <button id="boton_transacciones" class="boton" onclick="">
@@ -108,97 +207,8 @@
                         </div>
                 </main>
             </div>
+        </div>
 
-            <div class="contenedor_default">
-                <!--Cuentas-->
-                <header class="header_contenedor">
-                    <h3>Cuentas</h3>
-                    <button class="boton boton1">
-                        <iconify-icon icon="mingcute:add-fill" width="18"></iconify-icon>
-                        <p>Agregar cuenta</p>
-                    </button>
-                </header>
-                <main class="cuentas">
-                    <div class="cuenta">
-                        <div class="cuenta_icono">
-                            <iconify-icon class="icono" icon="mdi:bank" width="32"></iconify-icon>
-                        </div>
-                        <div class="cuenta_info">
-                            <h4>Banco</h4>
-                            <p>1000.00</p>
-                        </div>
-                    </div>
-                    <div class="cuenta">
-                        <div class="cuenta_icono">
-                            <iconify-icon class="icono" icon="mdi:wallet" width="32"></iconify-icon>
-                        </div>
-                        <div class="cuenta_info">
-                            <h4>Efectivo</h4>
-                            <p>1000.00</p>
-                        </div>
-                    </div>
-                    <div class="cuenta">
-                        <div class="cuenta_icono">
-                            <iconify-icon class="icono" icon="mdi:credit-card" width="32"></iconify-icon>
-                        </div>
-                        <div class="cuenta_info">
-                            <h4>Tarjeta</h4>
-                            <p>1000.00</p>
-                        </div>
-                    </div>
-                </main>
-
-            </div>
-            <div class="contenedor_default">
-                <!--Clasificacion de retiros-->
-                <header class="header_contenedor">
-                    <h3>Resumen retiros</h3>
-                    <button class="boton boton1">
-                        <iconify-icon icon="mdi:filter-variant" width="18"></iconify-icon>
-                        <p>Filtrar</p>
-                    </button>
-                </header>
-
-                <!--Agregar algunas transacciones con clasificacion(puede ser para la uni, para comida, etc)-->
-                <main class="clasificacion">
-                    <div class="clasificacion_item">
-                        <div class="clasificacion_icono">
-                            <iconify-icon class="icono" icon="mdi:food" width="32"></iconify-icon>
-                        </div>
-                        <div class="clasificacion_info">
-                            <h4>Comida</h4>
-                            <p>1000.00</p>
-                        </div>
-                    </div>
-                    <div class="clasificacion_item">
-                        <div class="clasificacion_icono">
-                            <iconify-icon class="icono" icon="mdi:food" width="32"></iconify-icon>
-                        </div>
-                        <div class="clasificacion_info">
-                            <h4>Comida</h4>
-                            <p>1000.00</p>
-                        </div>
-                    </div>
-                    <div class="clasificacion_item">
-                        <div class="clasificacion_icono">
-                            <iconify-icon class="icono" icon="mdi:food" width="32"></iconify-icon>
-                        </div>
-                        <div class="clasificacion_info">
-                            <h4>Comida</h4>
-                            <p>1000.00</p>
-                        </div>
-                    </div>
-                    <!--un item que diga universidad-->
-                    <div class="clasificacion_item">
-                        <div class="clasificacion_icono">
-                            <iconify-icon class="icono" icon="mdi:school" width="32"></iconify-icon>
-                        </div>
-                        <div class="clasificacion_info">
-                            <h4>Universidad</h4>
-                            <p>1000.00</p>
-                        </div>
-                </main>
-            </div>
 </body>
 <script>
     // Obtén el botón
@@ -221,7 +231,22 @@
         }
     }
 
+    if (window.innerWidth >= 600) {
+        var x = document.getElementById("transacciones");
+        var boton = document.getElementById('boton_transacciones');
+        x.classList.remove("ocultar");
+        x.classList.add("mostrar");
+        boton.classList.add("ocultar");
+        boton.classList.remove("mostrar");
 
+    }
+
+    if (window.innerWidth < 600) {
+        var boton = document.getElementById('boton_transacciones');
+        boton.classList.add("mostrar");
+        boton.classList.remove("ocultar");
+
+    }
     window.addEventListener('resize', function () {
         if (window.innerWidth >= 600) {
             var x = document.getElementById("transacciones");
