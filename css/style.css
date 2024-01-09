@@ -21,7 +21,7 @@ body {
   --color-boton-2: #333B46;
   --color-inactivo: #868F9E;
   --color-texto: #F1F2F7;
-  --color-negativo: #C46377;
+  --color-negativo: #db143c;
   --color-positivo: #5ECC8B;
   --box-shadow: 0 1px 3px rgba(0,0,0,0.12), 
   0 1px 2px rgba(0,0,0,0.24);
@@ -87,8 +87,6 @@ body {
   transform: var(--transform-boton-active);
 }
 
-
-
 .boton2 {
   background-color: var(--color-boton-2);
 }
@@ -96,6 +94,10 @@ body {
 .boton1 {
   background-color: var(--color-boton-1);
   color: var(--color-bg);
+}
+.boton-cancelar{
+  background-color: var(--color-negativo);
+
 }
 
 .color_inactivo_boton {
