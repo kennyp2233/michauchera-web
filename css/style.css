@@ -80,7 +80,8 @@ body {
   color: var(--color-texto);
   background-color: transparent;
   transition: var(--transition-boton);
-  transform: var(--transform-boton)
+  transform: var(--transform-boton);
+  cursor: pointer;
 }
 .boton:active{
   transform: var(--transform-boton-active);
