@@ -27,10 +27,10 @@
 
         <div class="seleccionar_cuenta">
             <iconify-icon class="icono" icon="mdi:bank" width="20"></iconify-icon>
-            <select class="cuenta_seleccionada">
-                <option selected>Banco</option>
-                <option>Efectivo</option>
-                <option>Tarjeta</option>
+            <select class="cuenta_seleccionada" onchange="location = this.value;">
+                <option value="cuenta_banco.html" selected>Banco</option>
+                <option value="cuenta_efectivo.html">Efectivo</option>
+                <option value="cuenta_tarjeta.html">Tarjeta</option>
             </select>
         </div>
 
