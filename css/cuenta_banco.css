@@ -55,7 +55,34 @@
 }
 
 .transaccion {
-    grid-template-columns: 0.25fr 0.5fr 1fr 1fr !important;
+    grid-template-columns: 0.25fr 0.5fr 1fr 1fr !important;   
+}
+
+.resumen-por-categoria {
+    background: var(--color-boton-2);
+    border-radius: 30px;
+    height: auto;
+    padding: 1rem;
+    width: auto;
+}
+
+.transaccion-categoria {
+    grid-template-columns: 0.25fr 0.5fr 1fr 1fr 2fr 1fr 1fr ;
+    display: grid;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem;
+}
+
+.linea-separadora {
+    border: 1px solid var(--color-boton-1);
+}
+
+.suma-categoria {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
 }
 
 @media (max-width: 430px) {
