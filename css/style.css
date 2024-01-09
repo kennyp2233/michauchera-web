@@ -32,6 +32,13 @@ body {
 
 }
 
+label{
+  font-size: 1.0rem;
+  margin-bottom: 0.5rem;
+  font-family: ui-sans-serif, system-ui;
+}
+
+
 .color-texto {
   color: var(--color-texto);
 }
@@ -86,6 +93,7 @@ body {
   transition: var(--transition-boton);
   transform: var(--transform-boton);
   cursor: pointer;
+  font-weight: bolder;
 }
 .header_pagina_principal .contenedor_derecha {
   display: flex;
