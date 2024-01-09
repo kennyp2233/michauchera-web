@@ -139,19 +139,22 @@ body {
 }
 
 .transaccion {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  /*grid de 5 columnas*/
+  grid-template-columns: 0.25fr 0.5fr 1fr 1fr 1fr;
   align-items: center;
-  padding: 1rem;
+  /*alinear horizontalmente en el centro cada grid*/
+  justify-items: center;
   background-color: var(--color-boton-2);
   border-radius: 30px;
-  margin: 0 0 1rem 0;
+  margin: 1rem 0 0 0;
 }
 
+/*
 .transaccion:last-child {
   margin: 0;
 }
-
+*/
 .retiro_color {
   color: var(--color-negativo);
 }
@@ -193,7 +196,34 @@ body {
   padding: 1rem;
 }
 
+.transaccion .cuenta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.transaccion_responsive {
+  display: none;
+  padding: 0.5rem;
+}
+
+.transaccion_responsive .boton {
+  width: fit-content;
+}
+
+.transaccion_responsive>* {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
 @media (max-width: 430px) {
+  .transaccion {
+    display: none;
+  }
+
   .botones_transacciones .boton {
     width: fit-content;
   }
@@ -205,6 +235,11 @@ body {
   .botones_transacciones .boton .icono {
     font-size: 1.5rem;
     margin: 0;
+  }
+
+  .transaccion_responsive {
+    display: block;
+
   }
 }
 
