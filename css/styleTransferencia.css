@@ -1,82 +1,80 @@
-body{
-    align-items: center;
-    justify-content: center;
-
+.main_pagina_principal {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-
-.main_pagina_principal{
-    padding: 0 1rem 1rem 1rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.flechas{
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
+.flechas {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 
 
 
-.botones_remitente{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+.botones_remitente {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.cuerpo_transferencias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  max-width: 800px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.main_pagina_principal {
+  width: 100%;
 }
 
 .contenedor-transferencia {
-    position: fixed;
-    top: 43%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.contenedor-transferencia{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: right;
   background: var(--color-boton-2);
-  max-width: 100%;
-  width: 700px;
-
   height: auto;
   padding: 1rem 1.2rem;
   border-radius: 30px;
+  width: 100%;
 }
 
-.titulo{
+.titulo {
   font-weight: bold;
 }
 
-.form-agregar-cuenta{
+.form-agregar-cuenta {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  padding: 20px 0;
+  padding-top: 20px;
 }
 
-.form-agregar-cuenta label{
+.form-agregar-cuenta label {
   font-weight: 400;
 }
 
 .txt-nombre-banco,
 .select-categoria,
-.txt-nombre-categoria{
+.txt-nombre-categoria {
   padding: 10px;
   border-radius: 50px;
   border: none;
   margin: 10px 0;
 }
 
-.contenedor-btn-transferencia{
+.contenedor-btn-transferencia {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -85,7 +83,7 @@ body{
 }
 
 .btn-cancelar,
-.btn-depositar{
+.btn-depositar {
   padding: 10px;
   border-radius: 50px;
   border: none;
@@ -94,16 +92,40 @@ body{
   cursor: pointer;
 }
 
-.select-banco-boton{
-    padding-left: 15px;
-    padding-right: 10px;
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
-    width: 100px;
-    height: 35px;
-    background: rgb(134, 143, 158);
-    font-size: 1.2rem;
-    z-index: 2;
-    color: #fff;
+.select-banco-boton {
+  padding-left: 15px;
+  padding-right: 10px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  background: rgb(134, 143, 158);
+  font-size: 1.2rem;
+  z-index: 2;
+  color: #fff;
+}
+
+.flechas-resposive {
+  display: none;
+}
+
+@media (max-width: 632px) {
+  .main_pagina_principal {
+    flex-direction: column;
+  }
+
+  .flechas {
+    display: none;
+  }
+
+  .flechas-resposive {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: -5px;
+    margin: 1rem;
+  }
+
 }
