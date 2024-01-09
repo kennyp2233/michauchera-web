@@ -29,7 +29,7 @@
 .main_pagina_principal {
     padding: 0 1rem 1rem 1rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row; 
     align-items: center;
     justify-content: center;
 }
@@ -55,31 +55,70 @@
 }
 
 .transaccion {
-    grid-template-columns: 0.25fr 0.5fr 1fr 1fr !important;
+    display: grid;
+    /*grid de 5 columnas*/
+    grid-template-columns: 0.25fr 0.5fr 1fr 1fr 2fr 1fr;
+    align-items: center;
+    /*alinear horizontalmente en el centro cada grid*/
+    justify-items: center;
+    background-color: var(--color-boton-2);
+    border-radius: 30px;
+    margin: 2rem 0 0 0;
+  }
+
+.resumen-por-categoria {
+    background: var(--color-boton-2);
+    border-radius: 30px;
+    height: auto;
+    padding: 1rem;
+    width: auto;
+}
+
+.transaccion-categoria {
+    grid-template-columns: 0.25fr 0.5fr 1fr 1fr 2fr 1fr 1fr ;
+    display: grid;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem;
+}
+
+.linea-separadora {
+    border: 1px solid var(--color-boton-1);
+}
+
+.suma-categoria {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
 }
 
 @media (max-width: 430px) {
-    .transaccion {
+    .transaccion{
         display: none;
     }
 
-    .botones_transacciones .boton {
+    .botones_transacciones .boton,
+    .boton_transacciones .boton{
         width: fit-content;
     }
 
-    .botones_transacciones .texto_boton {
+    .botones_transacciones .texto_boton,
+    .boton_transacciones .texto_boton {
         display: none;
     }
 
-    .botones_transacciones .boton .icono {
+    .botones_transacciones .boton .icono,
+    .transaccion_icono,
+    .boton_transacciones .boton .icono {
         font-size: 1.5rem;
         margin: 0;
     }
 
-    .transaccion_responsive {
+    .transaccion_responsive, .transaccion-categoria_responsive {
         display: block;
-
     }
+
 }
 
 @media (max-width: 489px) {
@@ -100,6 +139,8 @@
         flex-direction: column;
     }
 
+    
+
 }
 
 @media (max-width: 775px) {
@@ -117,5 +158,15 @@
 
     .header_pagina_principal .boton img {
         margin: 0;
+    }
+
+    .main_pagina_principal {
+        align-items: center;
+    }
+
+    .contenedor_default .grid_abajo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
