@@ -64,7 +64,6 @@ main {
   transform: perspective(400px) translateY(6px) translateZ(0) scale(0.9);
 }
 
-
 .contenedor-iconos {
   display: flex;
   justify-content: center;
