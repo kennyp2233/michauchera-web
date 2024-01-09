@@ -14,11 +14,17 @@
 <body>
     <!-- nav -->
     <header class="header_pagina_principal">
-        <button class="boton boton2 usuario_shortcut">
-          <img src="https://picsum.photos/30" alt="imagen de usuario">
-          <p>Usuario</p>
-        </button>
-      </header>
+        <div class="contenedor_derecha">
+            <button class="btn-regresar" onclick="(window.location ='index.html')">
+                <iconify-icon class="icono-boton" icon="mdi:arrow-left" width="20"></iconify-icon>
+            </button>
+            <button class="boton boton2 usuario_shortcut">
+                <img src="https://picsum.photos/30" alt="imagen de usuario">
+                <p>Usuario</p>
+            </button>
+        </div>
+
+    </header>
     <main class="main_pagina_principal">
         <div class="contenedor_default dash_head">
             <header class="header_contenedor">
@@ -44,9 +50,11 @@
                     <option value="2">Transferencia</option>
                     <option value="3">Nómina</option>
                     <option value="4">Universidad</option>
-                  </select>
+                </select>
                 <label for="fecha">Selecciona una fecha:</label>
                 <input type="date" id="fecha" name="fecha">
+                <label for="">Concepto</label>
+                <input type="text" />
                 <div class="btn-confirmacion">
                     <input type="submit" class="boton boton1" value="Depositar">
                     <input type="submit" class="boton boton-cancelar" value="Cancelar">

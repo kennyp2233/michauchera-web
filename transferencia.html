@@ -12,10 +12,16 @@
 
 <body>
     <header class="header_pagina_principal">
-        <button class="boton boton2 usuario_shortcut">
-            <img src="https://picsum.photos/30" alt="imagen de usuario">
-            <p>Usuario</p>
-        </button>
+        <div class="contenedor_derecha">
+            <button class="btn-regresar" onclick="(window.location ='index.html')">
+                <iconify-icon class="icono-boton" icon="mdi:arrow-left" width="20"></iconify-icon>
+            </button>
+            <button class="boton boton2 usuario_shortcut">
+                <img src="https://picsum.photos/30" alt="imagen de usuario">
+                <p>Usuario</p>
+            </button>
+        </div>
+
     </header>
 
     <div class="cuerpo_transferencias">
@@ -73,7 +79,9 @@
             <form class="form-agregar-cuenta">
                 <label for="nombre">Ingresa el monto a transferir </label>
                 <input type="text" name="nombre" class="txt-nombre-banco" placeholder="Nombre de Cuenta">
-                <label for="tipo">Categoria de la Cuenta</label>
+                <label for="concepto">Ingresa el motivo de transferencia </label>
+                <input type="text" name="concepto" class="txt-nombre-banco" placeholder="Motivo de transferencia">
+                <label for="tipo">Selecciona categoria de la Cuenta</label>
                 <select name="tipo" id="tipo" class="select-categoria">
                     <option value="0">Seleccione una categoria</option>
                     <option value="1">Comida</option>
@@ -81,9 +89,10 @@
                     <option value="3">Nómina</option>
                     <option value="4">Universidad</option>
                 </select>
+                
                 <div class="contenedor-btn-transferencia">
-                    <button class="btn-depositar ">Cancelar</button>
-                    <button class="btn-cancelar">Depositar</button>
+                    <button class="boton boton1 ">Depositar</button>
+                    <button class="boton boton-cancelar">Cancelar</button>
                 </div>
             </form>
         </div>
