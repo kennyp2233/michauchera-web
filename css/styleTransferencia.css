@@ -1,0 +1,109 @@
+body{
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.main_pagina_principal{
+    padding: 0 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.flechas{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.botones_remitente{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.contenedor-transferencia {
+    position: fixed;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contenedor-transferencia{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  background: var(--color-boton-2);
+  max-width: 100%;
+  width: 700px;
+
+  height: auto;
+  padding: 1rem 1.2rem;
+  border-radius: 30px;
+}
+
+.titulo{
+  font-weight: bold;
+}
+
+.form-agregar-cuenta{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.form-agregar-cuenta label{
+  font-weight: 400;
+}
+
+.txt-nombre-banco,
+.select-categoria,
+.txt-nombre-categoria{
+  padding: 10px;
+  border-radius: 50px;
+  border: none;
+  margin: 10px 0;
+}
+
+.contenedor-btn-transferencia{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-cancelar,
+.btn-depositar{
+  padding: 10px;
+  border-radius: 50px;
+  border: none;
+  margin: 10px 0;
+  background: var(--color-boton-1);
+  cursor: pointer;
+}
+
+.select-banco-boton{
+    padding-left: 15px;
+    padding-right: 10px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 35px;
+    background: rgb(134, 143, 158);
+    font-size: 1.2rem;
+    z-index: 2;
+    color: #fff;
+}
