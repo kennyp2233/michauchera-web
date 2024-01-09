@@ -55,8 +55,16 @@
 }
 
 .transaccion {
-    grid-template-columns: 0.25fr 0.5fr 1fr 1fr !important;   
-}
+    display: grid;
+    /*grid de 5 columnas*/
+    grid-template-columns: 0.25fr 0.5fr 1fr 1fr 2fr 1fr;
+    align-items: center;
+    /*alinear horizontalmente en el centro cada grid*/
+    justify-items: center;
+    background-color: var(--color-boton-2);
+    border-radius: 30px;
+    margin: 2rem 0 0 0;
+  }
 
 .resumen-por-categoria {
     background: var(--color-boton-2);
