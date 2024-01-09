@@ -12,6 +12,7 @@ html {
 body {
   background-color: var(--color-bg);
   color: var(--color-texto);
+
 }
 
 :root {
@@ -36,22 +37,15 @@ body {
 
 .main_pagina_principal {
   padding: 0 1rem 1rem 1rem;
-}
-
-.usuario_shortcut {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-boton-2);
-  border-radius: 50px;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 10px 15px;
 }
 
-.usuario_shortcut img {
-  border-radius: 50%;
-  margin-right: 10px;
+
+.contenedor-resumen {
+  width: 100%;
 }
 
 .contenedor_default {
@@ -59,6 +53,7 @@ body {
   border-radius: 30px;
   padding: 1rem 1.2rem;
   margin: 0 0 1rem 0;
+  width: 100%;
 }
 
 .header_contenedor {
@@ -66,6 +61,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 
 .boton {
   border-radius: 50px;
@@ -92,10 +88,23 @@ body {
   background-color: var(--color-inactivo);
 }
 
-.header_contenedor .boton2 {
-  width: -moz-fit-content;
+.usuario_shortcut {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-boton-2);
+  border-radius: 50px;
   width: fit-content;
-  height: -moz-fit-content;
+  padding: 5px 10px;
+}
+
+.usuario_shortcut img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.header_contenedor .boton2 {
+  width: fit-content;
   height: fit-content;
   padding: 0.5rem;
   border-radius: 100%;
@@ -151,15 +160,15 @@ body {
 
 #transacciones {
   overflow: hidden;
-  transition: height 1s ease;
 }
 
 .ocultar {
-  height: 0;
+  display: none;
+
 }
 
 .mostrar {
-  height: auto;
+  display: block;
 }
 
 .cuentas {
@@ -167,18 +176,53 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+
+}
+
+.dash_head {
+  max-width: 458px;
+}
+
+.clasificacion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem;
 }
 
 @media (max-width: 403px) {
   .botones_transacciones .boton {
-    width: -moz-fit-content;
     width: fit-content;
   }
+
   .botones_transacciones .texto_boton {
     display: none;
   }
+
   .botones_transacciones .boton .icono {
     font-size: 1.5rem;
     margin: 0;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media (min-width: 600px) {
+  .contenedor-resumen .contenedor_default {
+    margin: 0;
+  }
+
+  .contenedor-resumen {
+    display: grid;
+    grid-template-areas:
+      "grid_izquierdo contenedor_default"
+      "grid_izquierdo contenedor_default"
+    ;
+    gap: 16px;
+  }
+
+  .grid_izquierdo {
+    grid-area: grid_izquierdo;
+  }
+
+
+}
+
+@media (min-width: 800px) {}
