@@ -102,6 +102,13 @@ body {
   transition: var(--transition-boton);
   transform: var(--transform-boton);
 }
+
+.btn-confirmacion {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  gap: 50px;
+}
 .boton:active{
   transform: var(--transform-boton-active);
 }
