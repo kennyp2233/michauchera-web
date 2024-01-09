@@ -1,0 +1,58 @@
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .contenedor-agregar-cuenta,
+  .contenedor-agregar-categoria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--color-boton-2);
+    max-width: 100%;
+    width: 700px;
+  
+    height: 100%;
+    margin: 0.5rem;
+    padding: 1rem 1.2rem;
+    border-radius: 30px;
+  }
+  
+  .titulo {
+    font-weight: bold;
+  }
+  
+  .form-agregar-cuenta,
+  .form-agregar-categoria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  .form-agregar-cuenta label,
+  .form-agregar-categoria label {
+    font-weight: 400;
+  }
+  
+  .txt-nombre-banco,
+  .select-categoria,
+  .txt-nombre-categoria{
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    margin: 10px 0;
+  }
+  
+  .btn-agregar-cuenta,
+  .btn-agregar-categoria {
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    margin: 10px 0;
+    background: var(--color-boton-1);
+    cursor: pointer;
+  }
+  
