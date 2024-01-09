@@ -54,6 +54,10 @@
     align-items: center;
 }
 
+.transaccion {
+    grid-template-columns: 0.25fr 0.5fr 1fr 1fr !important;
+}
+
 @media (max-width: 430px) {
     .transaccion {
         display: none;
